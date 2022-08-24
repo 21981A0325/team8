@@ -1,0 +1,336 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.85)), url(asset/lv1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    margin: auto 3rem;
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
+span{
+    color: aqua;
+}
+
+.nav-links{
+    margin: auto 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: auto 1.2rem;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.sign-up{
+    margin-right: 1rem;
+    margin-left: 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px 25px;
+    border-radius: 7px;
+    text-transform: capitalize;
+    transition: 0.6s ease;
+}
+
+
+
+ul li a:hover{
+    color: aqua;
+    width: 100%;
+}
+
+.sign-up:hover{
+    background-color: #646262;
+}
+
+.sign-up:hover::after{
+    width: 0%;
+}
+
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+
+.content p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.5rem;
+    color: rgba(255,255,255,0.8);
+}
+
+button{
+    width: 240px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 1px solid aqua;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+button:hover{
+    box-shadow:inset 240px 0 0 0 aqua;
+    
+}
+/*------ design ------*/
+.design{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.row1{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: space-evenly;
+    
+    
+}
+.design-col{
+    flex-basis: 31%;
+    background: rgb(240, 252, 248);
+    border-radius: 10px;
+    
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    
+}
+.design-col:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+/*------ services we offer ------*/
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.services-col{
+    justify-content: space-around;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.services-col1{
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.services-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.layer:hover{
+    background: rgba(21, 24, 24, 0.459);
+    
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.layer:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}
+/*--------- why ---------*/
+.why{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.why-col{
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.why-col img{
+    width: 90%;
+    border-radius: 10px;
+}
+.why-col img:hover{
+    transform: scale(1.04);
+    transition: 1.5s;
+}
+.why-col p{
+    padding: 0;
+}
+.why-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* ------- happy customers -------*/
+.happy{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    text-align:  left;
+}
+.happy-col:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+}
+.happy-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.happy-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.happy-col p{
+    padding: 0;
+}
+.happy-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+/* ------- Contact us -------- */
+.cta{
+    margin: 100px auto;
+    width: 95%;
+    background-image: linear-gradient(rgba(78, 82, 82, 0.7),rgba(64, 68, 68, 0.7)),url(asset/img/virat-anushka-kitchen-livspace-w.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+/*---- footer ----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(243, 243, 243);
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+.happy .fa{
+    color: #f44336;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+
+

@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cta{
+    margin: auto;
+    width: 100%;
+    background-image: linear-gradient(rgba(78, 82, 82, 0.7),rgba(23, 24, 24, 0.7)),url(asset/wd06.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px;
+    text-align: center;
+    padding: 100px 0;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.cta p{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+button{
+    width: 240px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 7px;
+    font-weight: bold;
+    border: 1px solid aqua;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+button:hover{
+    box-shadow:inset 240px 0 0 0 aqua;
+    
+}
+/*--------- why ---------*/
+.why{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+.why-col{
+    flex-basis: 24%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.why-col img{
+    width: 90%;
+    border-radius: 10px;
+}
+.why-col img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    
+}
+.why-col p{
+    padding: 0;
+}
+.why-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+.fa{
+    color: #f44336;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+span{
+    color: aqua;
+}
+.btn{
+    width: 120px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 0px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+    border: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    box-shadow:inset 120px 0 0 0 rgb(0, 0, 0);
+    color: #fff;
+}
+/*---- footer ----*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: rgb(243, 243, 243);
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+}
+.happy .fa{
+    color: #f44336;
+}
+.fa-heart-o{
+    color: #f44336;
+}
